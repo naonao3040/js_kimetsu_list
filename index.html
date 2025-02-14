@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>鬼滅の刃のキャラクター一覧</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>鬼滅の刃 キャラクター選択</h1>
+
+    <div class="radio-buttons">
+      <label
+        ><input type="radio" name="category" value="all" />全キャラクター</label
+      >
+      <label
+        ><input type="radio" name="category" value="kisatsutai" /> 鬼殺隊</label
+      >
+      <label><input type="radio" name="category" value="hashira" /> 柱</label>
+      <label><input type="radio" name="category" value="oni" /> 鬼</label>
+    </div>
+
+    <div id="loading-modal" class="hidden">
+      <div class="loading-content">ローディング中...</div>
+    </div>
+    <div id="character-container" class="grid-container"></div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
