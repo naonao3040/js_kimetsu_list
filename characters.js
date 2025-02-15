@@ -3,9 +3,10 @@ export function displayCharacters(characters) {
   container.innerHTML = "";
 
   const cardList = characters.map(({ name, image, category }) => {
+    const imageUrl = `https://ihatov08.github.io${image}`;
     const cardElement = `
         <div class="character-card">
-          <img src="https://ihatov08.github.io${image}" alt="${name}">
+          <img src="${imageUrl}" alt="${name}">
           <h2>${name}</h2>
           <p>${category}</p>
         </div>`;
